@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">core-sdk-v1</string>
+    <string name="initialise">Initialise SDK</string>
+</resources>

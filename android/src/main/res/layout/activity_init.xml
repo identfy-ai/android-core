@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:animateLayoutChanges="true"
+    android:background="#000000"
+    android:padding="20dp">
+
+    <LinearLayout
+        android:id="@+id/initPANLL"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:visibility="gone"
+        android:gravity="center">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/initPANCV"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            app:cardElevation="0dp"
+            app:cardCornerRadius="15dp"
+            app:cardBackgroundColor="#ffffff">
+
+            <ProgressBar
+                android:id="@+id/initPANPB"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:indeterminateTint="#000000"
+                android:padding="5dp"/>
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/initPANIV"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:srcCompat="@drawable/image_check"
+                android:visibility="gone"
+                android:padding="7dp"
+                app:tint="#000000" />
+
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:textColor="#ffffff"
+            android:text="Verifying PAN ..."
+            android:layout_marginStart="10dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/initAadhaarLL"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:visibility="gone"
+        android:gravity="center">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/initAadhaarCV"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            app:cardElevation="0dp"
+            app:cardCornerRadius="15dp"
+            app:cardBackgroundColor="#ffffff">
+
+            <ProgressBar
+                android:id="@+id/initAadhaarPB"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:indeterminateTint="#000000"
+                android:visibility="visible"
+                android:padding="5dp"/>
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/initAadhaarIV"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:srcCompat="@drawable/image_check"
+                android:visibility="gone"
+                android:padding="7dp"
+                app:tint="#000000" />
+
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:textColor="#ffffff"
+            android:text="Processing Aadhaar ..."
+            android:layout_marginStart="10dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/initVoterLL"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:visibility="gone"
+        android:gravity="center">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/initVoterCV"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            app:cardElevation="0dp"
+            app:cardCornerRadius="15dp"
+            app:cardBackgroundColor="#ffffff">
+
+            <ProgressBar
+                android:id="@+id/initVoterPB"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:indeterminateTint="#000000"
+                android:padding="5dp"/>
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/initVoterIV"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:srcCompat="@drawable/image_check"
+                android:visibility="gone"
+                android:padding="7dp"
+                app:tint="#000000" />
+
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:textColor="#ffffff"
+            android:text="Matching Voter-ID ..."
+            android:layout_marginStart="10dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/initLicenseLL"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:visibility="gone"
+        android:gravity="center">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/initLicenseCV"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            app:cardElevation="0dp"
+            app:cardCornerRadius="15dp"
+            app:cardBackgroundColor="#ffffff">
+
+            <ProgressBar
+                android:id="@+id/initLicensePB"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:indeterminateTint="#000000"
+                android:padding="5dp"/>
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/initLicenseIV"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:srcCompat="@drawable/image_check"
+                android:visibility="gone"
+                android:padding="7dp"
+                app:tint="#000000" />
+
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:textColor="#ffffff"
+            android:text="Validating Driving License ..."
+            android:layout_marginStart="10dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/initLivelinessLL"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:visibility="gone"
+        android:gravity="center">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/initLivelinessCV"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            app:cardElevation="0dp"
+            app:cardCornerRadius="15dp"
+            app:cardBackgroundColor="#ffffff">
+
+            <ProgressBar
+                android:id="@+id/initLivelinessPB"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:indeterminateTint="#000000"
+                android:padding="5dp"/>
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/initLivelinessIV"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:srcCompat="@drawable/image_check"
+                android:visibility="gone"
+                android:padding="7dp"
+                app:tint="#000000" />
+
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:textColor="#ffffff"
+            android:text="Confirming Liveliness ..."
+            android:layout_marginStart="10dp"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/initSuccessTV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textSize="15sp"
+        android:textColor="#FFFFFF"
+        android:text="Verified Successful"
+        android:layout_gravity="center"
+        android:visibility="gone"
+        android:gravity="center"
+        android:padding="10dp"/>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/initSuccessCV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:animateLayoutChanges="true"
+        android:layout_gravity="center"
+        android:visibility="gone"
+        app:cardElevation="0dp"
+        app:cardCornerRadius="10dp"
+        app:cardBackgroundColor="#55ff55">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textSize="15sp"
+            android:textColor="#000000"
+            android:text="Go back to app"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:padding="10dp"/>
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>
