@@ -6,8 +6,6 @@ android {
     namespace 'ai.identfy.android'
     compileSdk 34
 
-    archivesBaseName = 'identfy'
-
     defaultConfig {
         minSdk 24
 
