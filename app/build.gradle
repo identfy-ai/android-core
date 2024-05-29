@@ -30,7 +30,9 @@ android {
 
 dependencies {
 
-    implementation project(':android')
+    //implementation project(':android')
+
+    implementation 'com.github.identfy-ai:android-alpha:0.0.1'
 
     implementation 'androidx.appcompat:appcompat:1.6.1'
     implementation 'com.google.android.material:material:1.12.0'
