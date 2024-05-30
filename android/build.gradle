@@ -40,9 +40,11 @@ afterEvaluate {
                 from components.release
                 groupId 'ai.identfy'
                 artifactId 'android'
-                version '0.0.1-alpha'
-                artifact("$buildDir/outputs/aar/android-release.aar")
+                version '0.0.1-banana'
             }
+        }
+        repositories {
+            mavenLocal()
         }
     }
 }
